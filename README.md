@@ -33,9 +33,9 @@ Credentials should be configured before sending SMS. Credential should be passed
 	
 		try:
 		   smsId = smsowl.sendPromotionalSms("TESTER", "+9189876543210", "Hello Python", "flash");
-		   	//Process smsId if you need to
+		   	#Process smsId if you need to
 		except Exception as e:
-		    //Handle exception.
+		    #Handle exception.
 
 Return value is Sms Id for single SMS and List of SMS ids for Bulk Sms
 
@@ -62,9 +62,9 @@ Lets assume templateId of `39ec9de0efa8a48cb6e60ee5` with following template.
 
 	try:
         smsId = smsowl.sendTransactionalSms("TESTER", "+919876543210", "39ec9de0efa8a48cb6e60ee5",{"CustomerName": "Bob", "Amount": 200 });
-        //Process smsid if needed.
+        #Process smsid if needed.
     except Exception as e:
-        //Handle exception
+        #Handle exception
 
 
 Return value is Sms Id.
